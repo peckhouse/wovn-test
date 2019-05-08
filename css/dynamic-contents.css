@@ -14,7 +14,7 @@
 }
 
 #loader-1 {
-  animation: animate 3s linear;
+  animation: animate 3s ease-in-out infinite;
   position: absolute;
   font-size: 20px;
   color: #ffffff;
