@@ -1,0 +1,12 @@
+.dynamic-content-1 {
+  border: 1px solid #DEE5EC;
+  width: calc(100% - 236px);
+  display: inline-block;
+  margin-right:  16px;
+  height: 500px;
+}
+
+#button-1 {
+  display: inline-block;
+  vertical-align: top;
+}

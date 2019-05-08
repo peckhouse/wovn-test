@@ -1,0 +1,20 @@
+.simple-iframe .left {
+  width: calc(100% - 288px);
+  display: inline-block;
+  float: left;
+}
+
+.simple-iframe .image {
+  width: calc(100% - 48px);
+}
+
+.simple-iframe iframe {
+  box-sizing: border-box;
+  float: right;
+}
+
+.simple-iframe:after {
+  display: block;
+  clear: both;
+  content: '';
+}

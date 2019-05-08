@@ -1,0 +1,157 @@
+html, body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #f6f8fa;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-content {
+  padding: 60px 24px;
+  max-width: 1280px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-content .main-content__section {
+  padding: 40px 0;
+  font-size: 0;
+}
+
+.main-content .main-content__section h3 {
+  font-style: italic;
+  margin: 0 0 32px;
+  font-size: 24px;
+  color: #3892E5;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.image {
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 16px;
+  width: 100%;
+}
+
+.image--50 {
+  width: 50%;
+}
+
+.image--25 {
+  width: 25%;
+}
+
+.header {
+  background-color: #404040;
+  padding: 0 24px;
+  display: block;
+  height: 60px;
+}
+
+.navigation {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: block;
+  height: 60px;
+  font-size: 0;
+}
+
+.navigation::before, .navigation__top, .main-menu {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.navigation::before {
+  height: 60px;
+  content: '';
+  width: 0;
+}
+
+.navigation__top,
+.navigation__top svg {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0;
+  width: 194px;
+  height: 21px;
+}
+
+.navigation__top {
+  margin:  0 32px 0 0;
+}
+
+.main-menu {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  width: calc(100% - 226px);
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu .main-menu__item {
+  display: inline-block;
+  margin:  0 16px 0 0;
+  position: relative;
+  list-style: none;
+  line-height: 60px;
+  font-weight: 500;
+  font-size:  16px;
+  color: #ffffff;
+  height: 60px;
+}
+
+.main-menu .main-menu__item > a {
+  cursor: pointer;
+}
+
+.sub-menu {
+  transition: all 0.25s ease-in-out;
+  transform: translate3d(0, 24px, 0);
+
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  background-color: #FAFAFA;
+  pointer-events: none;
+  border-radius: 3px;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+.sub-menu .sub-menu__item {
+  line-height: 40px;
+  list-style: none;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #404040;
+  display: block;
+  height: 40px;
+  margin: 0;
+}
+
+.sub-menu .sub-menu__item a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #404040;
+}
+
+.main-menu .main-menu__item:hover .sub-menu {
+  transform: translate3d(0, 48px, 0);
+
+  pointer-events: auto;
+  opacity: 1;
+}
+
