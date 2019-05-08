@@ -10,7 +10,7 @@
     <main class="main-content">
       <section class="main-content__section form-section form-section--simple">
         <h3>Dynamic contents</h3>
-
+        <div id="loader-1">IT'S LOADING</div>
         <div class="dynamic-content-1">
           Dynamic content in that box
         </div>

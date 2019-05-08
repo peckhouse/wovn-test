@@ -13,7 +13,63 @@
   vertical-align: top;
 }
 
+#loader-1 {
+  animation: animate 3s linear;
+  position: absolute;
+  font-size: 20px;
+  color: #ffffff;
+  display: none;
+  right: 24px;
+  top: 16px;
+}
+
+#loader-1.loading {
+  display: block;
+}
+
 .dynamic-import-1 {
   background-image: url('https://via.placeholder.com/3000/FFFBD3/FFFFFF??Text=.');
   background-repeat: repeat;
+}
+
+-webkit-@keyframes animate {
+  0% {
+    right: 24px;
+  }
+
+  50% {
+    right: 48px;
+  }
+
+  100%{
+    right: 24px;
+  }
+}
+
+-moz-@keyframes animate {
+  0% {
+    right: 24px;
+  }
+
+  50% {
+    right: 48px;
+  }
+
+  100%{
+    right: 24px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    right: 24px;
+  }
+
+  50% {
+    right: 48px;
+  }
+
+  100%{
+    right: 24px;
+  }
 }
